@@ -1,5 +1,6 @@
 from faker import Faker
 from pizzaproducer import PizzaProvider
+from nameproducer import NameProvider
 
 fake = Faker()
 
@@ -17,5 +18,18 @@ fake = Faker()
 # print(message)
 
 fake.add_provider(PizzaProvider)
-for i in range(10):
-    print(fake.pizza())
+
+def get_fake_name():
+    return fake.name()
+
+def get_fake_address():
+    return fake.address()
+
+def get_fake_email():
+    return fake.email()
+
+def get_fake_phone():
+    return fake.phone_number()
+
+def get_fake_pizza():
+    return fake.pizza()
