@@ -1,3 +1,4 @@
-ca.pem
-service.cert
-service.key
+# Ignore .key, .cert, and .pem files
+*.key
+*.cert
+*.pem
